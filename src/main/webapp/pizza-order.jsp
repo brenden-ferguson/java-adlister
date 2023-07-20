@@ -37,11 +37,11 @@
         </select>
         <br>
     </label>
-    <input type="checkbox" id="pepperoni" name="toppings1" value="Pepperoni">
+    <input type="checkbox" id="pepperoni" name="toppings" value="Pepperoni">
     <label for="pepperoni"> Pepperoni</label><br>
-    <input type="checkbox" id="sausage" name="topping2" value="Sausage">
+    <input type="checkbox" id="sausage" name="toppings" value="Sausage">
     <label for="sausage">Sausage</label><br>
-    <input type="checkbox" id="cheese" name="topping3" value="Cheese">
+    <input type="checkbox" id="cheese" name="toppings" value="Cheese">
     <label for="cheese">Cheese</label><br>
     <input type="submit">
 </form>

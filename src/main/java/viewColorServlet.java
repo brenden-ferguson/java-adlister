@@ -1,0 +1,21 @@
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+@WebServlet(name="viewColorServlet", urlPatterns = "/viewcolor")
+public class viewColorServlet extends HttpServlet {
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.getRequestDispatcher("/viewcolor.jsp").forward(request,response);
+    }
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String bgColor = request.getParameter("colors");
+        request.setAttribute("bgColor", bgColor);
+        System.out.println("bgColor = " + bgColor);
+        request.getRequestDispatcher("/viewcolor.jsp").forward(request,response);
+    }
+}
