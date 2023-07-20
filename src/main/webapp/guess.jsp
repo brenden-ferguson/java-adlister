@@ -12,16 +12,10 @@
 </head>
 <body>
 <h1>Guess a Number</h1>
-<form method="POST">
-    <label for="numbers">
-        <select name="numbers" id="numbers">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-        </select>
-    </label>
+<form method="POST" action="${pageContext.request.contextPath}/guess">
+    <label for="numbers"></label>
+        <input type="text" name="numbers" id="numbers">
     <input type="submit">
 </form>
-
 </body>
 </html>
